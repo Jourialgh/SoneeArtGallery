@@ -7,10 +7,7 @@ Welcome to Sonee Art Gallery, a website dedicated to showcasing artworks from ta
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
