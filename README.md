@@ -2,7 +2,6 @@
 
 Welcome to Sonee Art Gallery, a website dedicated to showcasing artworks from talented artists.
 
-![Sonee Art Gallery](Screenshot.png)
 
 ## Table of Contents
 
