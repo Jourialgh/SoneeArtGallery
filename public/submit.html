@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Art</title>
+    <link rel="stylesheet" type="text/css" href="submit-layout.css">
+    
+</head>
+<body>
+    <div> 
+        <header class="header">
+            <nav>
+                <a id="main" href="introductory.html">Main</a>
+                <a id="browse" href="browse.html">Browse</a>
+                <a id="art" href="aboutUs.html">About Us</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h1>SUBMIT YOUR ARTWORK</h1>
+        <p>Share your art with the world by providing the following information. We will get back to you as soon as possible!</p>
+        <form action="/submit" method="post" onsubmit="return validateForm()">
+
+            <!-- Frontend HTML Validation -->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required pattern="[A-Za-z]+" title="Only alphabets allowed"><br>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required pattern="[A-Za-z]+" title="Only alphabets allowed"><br>
+            
+            <label> Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> Female<br>
+            
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="05XXXXXXXX" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number"><br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@domain.com" required><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            
+      
+            <label for="instagram">Instagram Account:</label>
+            <input type="text" id="instagram" name="instagram" placeholder="username" required pattern="^@?(\w){1,15}$" title="Please enter a valid Instagram username"><br>
+
+            <label for="language">Communication Language:</label>
+            <select id="language" name="language" required>
+            <option value="" disabled selected hidden>Select Language</option>
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="spanish">Spanish</option>
+            <option value="german">German</option>
+            </select><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" cols="50" rows="4"></textarea><br>
+            
+            <input type="submit" class="button" value="Submit Your Art!">
+            </form>
+            </div>
+            
+            <footer class="footer">
+            <h5>&copy; 2023 Your Website. All rights reserved.</h5>
+            </footer>
+            
+            
+            <script src="validation.js"></script>
+            
+            </body>
+            </html>
+           
+           
+         
+            

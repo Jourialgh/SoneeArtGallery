@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #EAEAEA;
+  background-color: black;
+  margin: 0;
+  padding-top: 60px;
+}
+
+/* Header Styles */
+.header {
+  color: #F6F1EE;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.top-logo {
+  position: fixed;
+  top: 40px;
+  left: 15px; /* Adjusted left position */
+  max-width: 100px; /* Set the maximum width for the logo */
+}
+
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center; /* Distribute items evenly */
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #F6F1EE;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 80px;
+}
+
+nav a:hover {
+  background-color: #0c0501;
+  color: #FA9ED9;
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Art Gallery Styles */
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 30px; /* Uniform gap for spacing */
+  padding: 30px; /* Padding around the gallery */
+  
+}
+
+/* Art Piece Styles */
+.art-piece {
+  width: 250px; /* Increased size for better display */
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.art-piece:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Larger shadow for depth */
+}
+
+.art-piece img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.art-piece:hover img {
+  transform: scale(1.05); /* Gentle zoom on hover */
+}
+
+/* Overlay Styles */
+.art-piece .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 18px; /* Larger font size for overlay text */
+}
+
+.art-piece:hover .overlay {
+  opacity: 1;
+}
+
+/* Existing styles remain unchanged */
+
+.footer {
+ 
+  width: 100%;
+
+  position: relative;
+}
+
+.footer-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* CSS for small devices (576px and below) */
+@media only screen and (max-width: 576px) {
+
+}
+
+/* CSS for medium devices (between 577px and 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  
+}
+
+/* CSS for large devices (between 769px and 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}

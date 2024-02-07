@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission Success</title>
+    <link rel="stylesheet" type="text/css" href="server.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submission Received Successfully</h1>
+
+        <!-- Button to Toggle Data Visibility -->
+        <button id="toggleButton" onclick="toggleSubmissionData()">Click to View Submitted Data</button>
+
+        <div id="submissionData" class="submission-data hidden">
+            <p>First Name: <span id="fname"></span></p>
+            <p>Last Name: <span id="lname"></span></p>
+            <p>Gender: <span id="gender"></span></p>
+            <p>Mobile: <span id="mobile"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Date of Birth: <span id="dob"></span></p>
+            <p>Language: <span id="language"></span></p>
+            <p>Instagram Account: <span id="instagram"></span></p>
+            <p>Message: <span id="message"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] === variable) {
+                    return decodeURIComponent(pair[1].replace(/\+/g, " "));
+                }
+            }
+            return false;
+        }
+
+        function toggleSubmissionData() {
+            var submissionData = document.getElementById('submissionData');
+            var toggleButton = document.getElementById('toggleButton');
+            if (submissionData.classList.contains('hidden')) {
+                submissionData.classList.remove('hidden');
+                toggleButton.textContent = 'Hide Submitted Data';
+            } else {
+                submissionData.classList.add('hidden');
+                toggleButton.textContent = 'Click to View Submitted Data';
+            }
+        }
+
+        document.getElementById('fname').textContent = getQueryVariable('fname');
+        document.getElementById('lname').textContent = getQueryVariable('lname');
+        document.getElementById('gender').textContent = getQueryVariable('gender');
+        document.getElementById('mobile').textContent = getQueryVariable('mobile');
+        document.getElementById('email').textContent = getQueryVariable('email');
+        document.getElementById('dob').textContent = getQueryVariable('dob');
+        document.getElementById('language').textContent = getQueryVariable('language');
+        document.getElementById('instagram').textContent = getQueryVariable('instagram');
+        document.getElementById('message').textContent = getQueryVariable('message');
+    </script>
+</body>
+</html>

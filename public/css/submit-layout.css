@@ -1,0 +1,136 @@
+/* Header Styles */
+.header {
+  color: #F6F1EE;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.top-logo {
+  position: fixed;
+  top: 40px;
+  left: 15px; /* Adjusted left position */
+  max-width: 100px; /* Set the maximum width for the logo */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center; /* Distribute items evenly */
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #F6F1EE;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 80px;
+}
+
+nav a:hover {
+  background-color: #0c0501;
+  color: #FA9ED9;
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+body {
+  background-color: black;
+  align-content: center;
+  background-image: url("background2.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+
+.container {
+  margin-top: 60px; /* Space below the header */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 50%; /* Adjusted width for the center container */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the container */
+  margin-bottom: 10%;
+}
+
+.container form {
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FA9ED9;
+  text-align: center;
+  padding: 0%;
+  font-weight: bolder;
+
+}
+
+
+p {
+  text-align: center;
+  font-size: larger;
+  font-family: cursive;
+  color: black;
+}
+
+.container .button {
+  background-color: #3529DC;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 25%;
+}
+
+.button:hover {
+  background-color: #FA9ED9;
+  color: black;
+}
+
+.button:active {
+  background-color: #F6F1EE;
+}
+
+
+input {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

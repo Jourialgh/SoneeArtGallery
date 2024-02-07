@@ -1,0 +1,168 @@
+/* Header Styles */
+.header {
+  color: #F6F1EE;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.top-logo {
+  position: fixed;
+  top: 40px;
+  left: 15px; /* Adjusted left position */
+  max-width: 100px; /* Set the maximum width for the logo */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center; /* Distribute items evenly */
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #F6F1EE;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 80px;
+}
+
+nav a:hover {
+  background-color: #0c0501;
+  color: #FA9ED9;
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+body {
+  background-color: black;
+  align-content: center;
+
+}
+
+
+
+.developer-profile {
+  margin-top: 80px; /* Space below the header */
+  margin-left: 20%;
+  background-color: #F6F1EE;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+}
+
+.developer-profile h1 {
+  font-family: 'Gill Sans';
+  font-weight: bolder;
+  color: #ED7D31;
+  text-align: center;
+}
+
+
+.developer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.developer-table th,
+.developer-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ED7D31;
+  color: #4F4A45;
+}
+
+.developer-table th {
+  font-weight: bold;
+}
+
+.developer-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.developer-table tbody tr:hover {
+  background-color: #ED7D31;
+  color: #fff;
+}
+
+.whole {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 100%;
+  margin-top: 5%;
+
+}
+
+.about-gallery,
+.mission,
+.vision {
+  flex: 1;
+  max-width: 300px;
+  background-color: #F6F1EE;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  transition: transform 0.3s;
+}
+
+.about-gallery:hover,
+.mission:hover,
+.vision:hover {
+  transform: scale(1.05);
+}
+
+.about-gallery img,
+.mission img,
+.vision img {
+  width: 100%;
+  max-height: 150px;
+}
+
+.about-gallery h1,
+.mission h1,
+.vision h1 {
+  font-family: 'Gill Sans';
+  font-weight: bolder;
+  color: #ED7D31;
+  text-align: center;
+
+}
+
+.about-gallery p,
+.mission p,
+.vision p {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #4F4A45;
+  font-weight: lighter;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: sans-serif;
+}
+
+.column1,
+th {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: #4F4A45;
+  padding: 20px;
+  color: #F6F1EE;
+  margin-top: 15%;
+  width: 100%;
+  font-size: small;
+  text-align: center;
+}

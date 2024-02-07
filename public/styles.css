@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(homevid.gif); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: transparent; 
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: left;
+    padding: 10px;
+}
+
+.top-logo {
+    position: fixed;
+    top: 40px;
+    left: 15px; /* Adjusted left position */
+    max-width: 100px; /* Set the maximum width for the logo */
+}
+
+.topnav {
+    position: fixed;
+    top: 40px;
+    right: 65px;
+    padding: 6px;
+}
+
+.search-bar {
+    width: 150px; 
+    padding: 10px; 
+    font-size: 15px; 
+}
+
+.pinklogo {
+    margin-top: 540%;
+    max-width: 500px; /* Make sure the image doesn't exceed the container width */
+    height: 150px; /* Maintain the image's aspect ratio */
+}
+
+
+
+.intro-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #757471;
+    margin-top: 20%;
+    display: block;
+    margin-right: 40%;
+}
+
+
+article {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-box {
+    text-align: center;
+    margin: 0 20px;
+    max-width: 200px;
+    width: 30%; 
+    display: inline-block;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+    margin-left: 5%;
+    margin-top: 0%;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    
+}
+
+.button:hover {
+    background-color: #3529DC;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.about-button {
+    background-color: #fff;
+}
+
+.browse-button {
+    background-color: #fff;
+}
+
+.submit-button {
+    background-color: #fff;
+}
+
+.ourweb article h1 {
+    color: black;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  
+  .ourweb article p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+  }
+  .ourweb .header {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .ourweb .content {
+    text-align: left;
+    gap: 2%;
+  }
+
+
+  .ourweb .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .ourweb-picture {
+    max-width: 200px; 
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+
+
+.featured-pieces{
+
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.icon-container {
+    position: fixed;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.icon {
+    margin: 10px;
+}
+
+.icon-link {
+    margin-bottom: 35px;
+}
+
+.why-us .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .why-us .art-list {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .why-us .list-picture {
+    display: inline-block;
+    max-width: 200px; 
+  }
+
+  footer {
+    background-color: #3529DC;
+    color:white;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .socials {
+    margin-top: 20px;
+  }
+  
+  .socials h5 {
+    margin-bottom: 10px;
+  }
+  
+  .socials a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .socials img {
+    width: 32px;
+    height: 32px;
+  }
+
+
+
+
+/* CSS for small devices (576px and below) */
+@media only screen and (max-width: 576px) {
+
+}
+
+/* CSS for medium devices (between 577px and 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  
+}
+
+/* CSS for large devices (between 769px and 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}
